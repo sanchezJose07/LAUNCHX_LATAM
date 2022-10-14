@@ -17,6 +17,106 @@
     <br>
 
     <hr>
-    
+    <!--TIPOS DE INPUTS-->
+    <h2>Input de texto</h2>
+    <label for="correo1">Input de correo</label><br>
+    <input type="email" id="correo1" name = "correo1"><br><br>
+
+    <label for = "numero1">Input de numero</label><br>
+    <input type = "number" id="numero1" name = "numero1"><br><br>
+
+    <label for = "psw1">Input de password</label><br>
+    <input type = "password" id="psw1" name = "psw1"><br><br>
+
+    <label for = "tell">Input de Telefono</label><br>
+    <input type = "tel" id = "tell" name = "tell" maxlength = "10"><br><br>
+
+    <label for = "url1">Input de url</label><br>
+    <input type = "url" id = "url1" name = "url1"><br><br>
     <hr>
+    
+    <h2>Input de seleccion multiple</h2><br>
+    <input type = "checkbox" id="topping1" name = "topping1" value = "chispas">
+    <label for="topping1">Chispas de chocolate</label><br>
+    <input type = "checkbox" id = "topping2" name = "topping2" value = "nuez">
+    <label for = "topping2">Nuez</label><br>
+    <input type = "checkbox" id = "topping3" name = "topping3" value = "fresas">
+    <label for = "topping3">Fresas</label><br>
+
+    <h2>Input de seleccion unica</h2><br>
+    <input type = "radio" id="roja" name = "salsas" value = "roja">
+    <label for = "roja">Roja</label><br>
+    <input type ="radio" id = "verde" name = "salsas" value = "verde">
+    <label for = "verde">Verde</label><br>
+    <input type ="radio" id = "guacamole" name = "salsas" value = "verde">
+    <label for = "verde">Guacamale</label><br>
+    <input type = "radio" id="cacahuate" name = "salsas" value = "cacahuate">
+    <label for = "cacahuate">Cacahuate</label><br>
+
+    <h2>Select</h2>
+    <label for = "tacos">De que la orden</label><br>
+    <select id = "tacos" name = "tacos">
+        <option value = "suadero">Suadero</option>
+        <option value = "pastor">Pastor</option>
+        <option value = "campechanos">Campechanos</option>
+        <option value = "tripa">Tripa</option>
+        <option value = "vegetariano">Vegetariano</option>
+    </select>
+
+    <h2>Select con input</h2>
+    <label for = "refresco">Refresco</label>
+    <input list = "refresco">
+    <datalist id = "refresco">
+        <option value = "Coca-Cola">
+        <option value = "Manzana">
+        <option value = "Naranja">
+        <option value = "Manago"> 
+        <option value = "Guayaba"> 
+        <option value = "Pepsi"> 
+    </datalist>
+    <br><br>
+
+    <hr>
+
+    <h2>Input de Fecha</h2><br>
+    <input type = "date" id = "fecha1" name = "fecha1"><br>
+    <input type = "datetime-local" id = "fecha2" name = "fecha2"><br>
+    <input type = "week" id = "fecha3" name = "fecha3"><br>
+    <input type = "time" id = "fecha4" name = "fecha4"><br>
+    <input type = "month" id = "fecha5" name = "fecha5"><br><br>
+
+    <hr>
+
+    <h2>Input de tipo archivo</h2><br>
+    <input type = "file" id = "archivo1" name = "archivo" multiple><br><br>
+
+    <h2>input de Color</h2><br>
+    <input type = "color" id = "color1" name = "color1"><br><br>
+
+    <h2>Input de Rango</h2>
+    <label for = "vol">Volumen (entre 0 y 50):</label><br>
+    <input type = "range" id = "vol" name = "vol" min = "0" max = "50" value = "40"><br>
+
+
+    <hr>
+
+    <h2>Input de Boton</h2>
+    <input type = "reset"><br>
+    <input type = "submit"><br>
+    <input type = "button" id = "boton1" name = "boton1" value = "Boton1" onclick = "alert('Que pedo!!!')"><br><br>
+
+    <hr>
+    <!--formularios-->
+    <h2>Ejemplo de Formulario</h2>
+    <form action = "/action.js" id = "form1" method = "post">
+        <label for = "nombre">Nombre</label>
+        <input type = "text" id = "nombre" name = "nombre"><br><br>
+        <input type = "submit">
+        <input type = "reset">
+    </form>
+
+    <br>
+    <label for ="apellido">Apellido</label>
+    <input type = text id = "apellido" name = "apellido" form = form1>
+
 </body>
